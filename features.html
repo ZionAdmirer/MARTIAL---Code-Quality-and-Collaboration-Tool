@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - MARTIAL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .logo {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #ff5722;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .features-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff5722;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .feature-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-item {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+
+        .feature-item a {
+            background: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .feature-item a:hover {
+            background: #e64a19;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        .social-links li {
+            margin: 0 10px;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #ff5722;
+        }
+
+        /* Responsive Design Enhancements */
+        @media (max-width: 768px) {
+            .feature-list {
+                grid-template-columns: 1fr; /* Stack features on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>MARTIAL</h1>
+        </div>
+    </header>
+
+    <div class="features-section">
+        <h2>Features of MARTIAL</h2>
+        <div class="feature-list">
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <h3>Repository Analysis</h3>
+                <p>Fetch and analyze repositories from GitHub to assess code quality and complexity. Gain insights into the structure and maintainability of your codebase.</p>
+                <a href="RepositoryAnalysis.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">👥</div>
+                <h3>Contributor Insights</h3>
+                <p>Gain insights into contributor activity, including commits, pull requests, and issues. Understand team dynamics and individual contributions.</p>
+                <a href="ContributorInsights.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📈</div>
+                <h3>Project Health Metrics</h3>
+                <p>Evaluate project health through metrics like commit frequency and issue resolution rates. Make informed decisions based on real-time data.</p>
+                <a href="ProjectHealth.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔍</div>
+                <h3>Advanced Search</h3>
+                <p>Perform advanced searches within repositories to find specific code patterns or issues. Enhance your code review process with powerful search capabilities.</p>
+                <a href="AdvancedSearch.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📅</div>
+                <h3>Activity Timeline</h3>
+                <p>Visualize the activity timeline of your projects. Track changes over time and identify trends in development and collaboration.</p>
+                <a href="ActivityTimeline.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⚙️</div>
+                <h3>Integration Support</h3>
+                <p>Integrate MARTIAL with your existing tools and workflows. Seamlessly connect with CI/CD pipelines and project management software.</p>
+                <a href="IntegrationSupport.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <h3>Customizable Reports</h3>
+                <p>Generate customizable reports to suit your team's needs. Analyze data in a format that works best for your workflow.</p>
+                <a href="CustomizableReports.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🔒</div>
+                <h3>Secure Data Storage</h3>
+                <p>Rest assured that your data is securely stored and protected. MARTIAL follows industry-standard security practices to safeguard your information.</p>
+                <a href="SecureData.html">Learn More</a>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📧</div>
+                <h3>Email Notifications</h3>
+                <p>Stay informed about important updates and changes in your projects. Receive email notifications for critical events and milestones.</p>
+                <a href="EmailNotifications.html">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MARTIAL. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">GitHub</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
